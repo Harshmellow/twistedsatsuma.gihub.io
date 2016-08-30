@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harshmellow - Homework</title>
+<style>
+@import 'https://fonts.googleapis.com/css?family=Miriam+Libre|Slabo+27px';
+body{
+	overflow-x:hidden;
+	height:2500px;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+/*==============================Basic python holder*/
+h1,h2,h3,p{
+	margin:0;
+	padding: 10px 0 0 4em;
+	text-align:center;
+	display:block;
+	
+		
+}
+.displays{
+	font-size:1.5em;
+	font-family:'Verdana',serif;
+	text-align:left;
+	padding-left:4em;
+	display:block;
+	color:red;
+	font-weight:bold;
+}
+.displays:after{
+	content:":"
+}
+/*========================================================================header*/
+div.header{
+	
+	height:500px;
+	width:100%;
+	background-image:url('https://cdn.fedoramagazine.org/wp-content/uploads/2015/11/Python_logo.png');
+	background-position:center;
+	background-size:cover;
+	border-width: 0 0 2px 0;
+	border-style:solid;
+	border-color:blue;
+}
+/*=========================================Nav -con*/
+div.nav-con{
+	height:100px;
+	width:100%;
+		background-color:#E59866;
+		
+}
+button.nav-btn{
+	border-radius:50px;
+	background-color:#FC6E51 ;
+	border-width:10px;
+	border-style:solid;
+	border-color:#E9573F;
+	width:50%;
+	height:100%;
+}
+.nav-btn:hover{
+	opacity:.7;
+}
+span.nav-btn{
+	color:#4A89DC;
+	font-size:4em;
+	font-family: 'Miriam Libre', sans-serif;
+	font-weight:bold;
+}
+/*Python intro*/
+div.python-intro{
+	height:1000px;
+	width:100%;
+	background-color:#fafafa;
+	font-family: 'Slabo 27px', serif;
+		color:#99A3A4;
+}
+</style>
+</head>
+<body>
+<div class="header">
+
+</div>
+<div class="nav-con">
+<a href="learn.html"><button class="nav-btn"><span class="nav-btn">HTML</span></button></a><a href="learnCss.html"><button class="nav-btn"><span class="nav-btn">CSS</span></button></a>
+</div>
+<div class="python-intro">
+ <h1>At the time of this writing I am not even close to being an expert of python, so this is more for me</h1>
+ <p>While I might have web design down front end wise, getting into a back-end langauge like python is daunting. But as you'll see that once you understand certain blocks of each langauge the rest will come easily.</p>
+ <p>Your gonna notice that many languages including arrayName ['JavaScript','Python3','PHP','ext'] Like arrays, Which is like a variable that holds info.</p>
+ <h1>Function</h1>
+ <p>Functions are usefull when you need to do a certain set of commands a bunch of times, like converting celsius to farrenhiet for data being sent from Us to Canada weather station</p>
+ <h3>Function syntax</h3>
+ <pre>
+														======!!#Comments go under!!=======
+def functionName(parameter1,parameter2):				Function Header(this is where your put your parameters and define your functionName) 														
+	""" (init,float) -> number					(this is called a docstring tells, humans how your function works with the help(functionName))
+															(also tells human that first parameter1 is a interger, and parameter2 is a float)
+...		Returns the parameter1 multiplied to parameter2				(like a comment telling user directly what function does)
+...	
+...		>>> functionName(2,4)									(this is called a test, becuase it shows human how your function should work and maybe certian errors)
+...		8
+...		>>> functionName(122,2)
+...		144
+...		>>> functionName(0,12421421)
+...		0
+...		"""
+...		return (parameter1 * parameter2)				(Called the body becuase this is the part of the function where its being told what to do, like the real instructions)
+
+functionName(102,6)						(funciton call: or the way to use and reuse your funciton)
+608
+ 
+ </pre>
+</div>
+<div class="footer">
+
+</div>
+</body>
+</html>

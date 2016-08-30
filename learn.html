@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harshmellow - Learning Html</title>
+<style>
+@import 'https://fonts.googleapis.com/css?family=Fjalla+One|Indie+Flower';
+body {
+	overflow-x:hidden;
+	height:4000px;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+/*holds basic html look */
+h1,h2,h3,p{
+	margin:0;
+	padding: 10px 0 0 4em;
+	text-align:left;
+	display:block;
+}
+.displays{
+	font-size:1.5em;
+	font-family:'Verdana',serif;
+	text-align:left;
+	padding-left:4em;
+	display:block;
+	color:red;
+	font-weight:bold;
+}
+.displays:after{
+	content:":"
+}
+pre{
+	background-color:#fafafa;
+}
+/*====================================================CSS Start*/
+div.css{
+	height:600px;
+	width:100%;
+	background-color:#AED6F1;
+	background:
+	 linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url('https://pixabay.com/static/uploads/photo/2014/06/23/20/32/grass-375586_960_720.jpg');
+	
+		background-size:cover;
+		margin:0;
+		padding:0;
+	color:#fff;
+	font-family: 'Fjalla One', sans-serif;
+	
+}
+h1.dark-back{
+	background-color:#85929E;
+	opacity:.89;
+	font-weight:bold;
+	
+}
+span.dark-back{
+	font-size:1.5em;
+	opacity:1;
+	color:wheat;
+	font-family: 'Indie Flower', cursive;
+}
+.intro{
+	font-size:1em;
+	color:inherit;
+	
+
+}
+p.css{
+	margin:auto;
+	display:block;
+	text-align:center;
+	color:inherit;
+	padding:1em 100px 1em 100px;
+	font-family: 'Fjalla One', sans-serif;
+}
+h1.css{
+	text-align:center;
+	font-family:'Verdana',serif;
+	font-size:2em;
+	margin:auto;
+	color:inherit;
+	padding:1em 250px 1em 250px;
+	font-family: 'Fjalla One', sans-serif;
+	
+}
+h2.css{
+	
+	font-size:1em;
+	margin:auto;
+	text-align:center;
+	color:inherit;
+	font-family: 'Fjalla One', sans-serif;
+}
+</style>
+</head>
+<body>
+<a href="learnPython.html"><button type="button">Python3</button></a>
+<h1>Learning the art of Html</h1>
+	<p>Im just kiding btw , html is pretty simple, infact all you really need to make a site are 6 tags(head,body,title,h1-h6,p)</p>
+<h2>How this will work</h2>
+<p>As you go through this quick guide you will notice that the pages quaility improves, this is suppose to show what you can do with the things you have learned up to that point. I will be hooping around so if you have questions on things that I have displayed on this page some great sites to learn Html/css are</p>
+<ol>
+<h1>In the order of usefulness</h1>
+<li><a href="https://www.codecademy.com/">CodeAcademy</li>
+<li><a href="http://www.stackoverflow.com/">StackOverflow</a></li>
+<li><a href="http://www.w3schools.com/">W3Shools</a></li>
+<li><a href="http://www.css-tricks.com/">CssTricks</a></li>
+</ol>
+<h3>Now Lets begin</h3>
+<p>Now we could be lame and just edit html through a web browser but, im telling you right now that when you refresh your code will be lost so we will download a compiler</p>
+<h3>For Windows</h3>
+<a href="https://notepad-plus-plus.org/">Notepade++</a>
+<h3>For Macs</h3>
+<a href="https://www.macupdate.com/app/mac/39459/sublime-text">Sublime Text</a>
+<aside>Im just gonna say that I kinda favor windows</aside>
+<hr>
+<h1>&lt;DOCTYPE html&gt;</h1>
+<p>This tells the compiler that, your using the language html or HYPER_TEXT_MARKUP_LANUAGE</p>
+<h2>I've been going kinda slow , so lets go a little faster</h2>
+<pre>
+  &lt;DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;title&gt;Site Name&lt;&#47;title&gt;
+  &lt;&#47;head&gt;
+  &lt;body&gt;
+  &lt;&#47;body&gt;
+  &lt;&#47;html&gt;
+</pre>
+<h1>What does it <i>mean?</i></h1>
+<p>&lt;head&gt; is the site retrieving data like &lt;meta&gt; tags which can be sent to browsers telling the web browser what langauge your document is in this case english(NOT NECCESARY AT ALL).</p>
+<h2>Learn to like your <b>&lt;BODY&gt;</b></h2>
+<p>Body is the is like your store front, what people will see, and depending on how you use your body your can attract alot of attention, or ward people away.</p>
+	<h1>Lets get cracking</h1>
+	<p>Now that you have your template lets mess around with what your body is showing currently</p>
+	<pre>
+	&lt;body&gt;
+		&lt;h1&gt;&lt;Title Name&lt;&#47;h1&gt;
+		&lt;p&gt;The text here will be displayed to the site. Notice how its this paragraph is smushed toghther with two &lt;p&gt; tags, that called opening and closing tags and is very important to keeping your code working&#47;p&gt;
+	&lt;&#47;body&gt;
+	</pre>
+	<h1 class="displays">Displays</h1>
+	<h1>Title Name</h1>
+	<p>The text here will be displayed to the site. Notice how its this paragraph is smushed toghther with two p tags, that called opening and closing tags and is very important to keeping your code working</p>
+	<hr>
+	<h3>Remember!!</h3>
+
+	<p>Close all your tags starting with &lt;h1&gt; and ending with &lt;&#47;h1&gt; or in this case any element, like
+&lt;p&gt;	 and &lt;
+&#47;p&gt;</p>
+<h1>Lets give you some elements</h1>
+<p>BTW!! -- Elements are just what your call things like &lt;&#47;p&gt; which display a paragraph</p>
+<ol>
+	<li>&lt;h1&gt; - &lt;h6&gt;</li>
+	<li>&lt;p&gt; Paragraphs</li>
+	<li>&lt;div&gt;</li>
+	<li>&lt;ol&gt;</li>
+	<li>&lt;ul&gt;</li>
+	<li>&lt;li&gt;</li>
+	<li>&lt;table&gt;</li>
+	<li>&lt;img src=&gt;</li>
+	<li>&lt;a href=&gt;</li>
+	<li>&lt;span&gt; inline styler </li>
+	
+</ol>
+<h1>Great now you just learned all the elements used on this site, including link anchors,lists,paragraphs,h1-h3.</h1>
+<p>But your asking how do your use these <i>things...?</i></p>
+	<h2>Lets start with with lists!</h2>
+		<ol>
+			<li>lists are displayed like</li>
+			<li>this and are useful when</li>
+			<li>listing of things that can be numbered and such.</li>
+		</ol>
+	<h1>Syntax for Lists</h1>
+		<pre>
+			&lt;ol&gt;
+				&lt;li&gt;Item #1&lt;&#47;li&gt;
+				&lt;li&gt;Item #2&lt;&#47;li&gt;
+				&lt;li&gt;Last item&lt;&#47;li&gt;
+				
+			&lt;&#47;ol&gt;
+		</pre>
+	<h1 class="displays">Displays</h1>
+	<ol>
+		<li>Item #1</li>
+		<li>Item #2</li>
+		<li>Last item</li>
+	</ol>
+	<hr>
+	<h1>Parents suck but deal with them</h1>
+	<h3>Up to this point we have not talked about "Parent-elements". There not much different, there only real difference is that they hold other elements.</h3>
+	<h2><b>Think about</b> Russian dolls, the biggest one holds all the other dolls.</h2>
+	<pre>In this case the parent &lt;ol&gt;
+		holds or contains the child &lt;li&gt;
+		
+	</pre>
+	<h2>Difference between ol and ul</h2>
+		<p>Another type of list is &lt;ul&gt; . Its a parent too! Which means that it controls what kind of list it is. &lt;ul&gt; creates bulleted lists</p>
+		<ul>
+			<li>Bulleted lists</li>
+			<li>Still uses the child</li>
+			<li>li</li>
+		</ul>
+		
+		<h1>Lets Learn the last piece TABLES!</h1>
+			<h3>Tables have 3 main components or tags</h3>
+		<p>&lt;table&gt; &lt;tr&gt; and &lt;td&gt;</p>
+		
+		<h2>These things stand for different things</h2>
+			<ul>
+				<li>Table = Parent,holds tr,td elements</li>
+				<li>tr = Child, table-row,</li>
+				<li>td = Child, table-data</li>
+				
+			</ul>
+		<h3>Lets make a table</h3>
+			<pre>
+				&lt;table&gt;
+					&lt;tr&gt;
+						&lt;td&gt;Table Item&lt;&#47;td&gt;
+					&lt;&#47;tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;Row with 2 colums&lt;&#47;td&gt;&lt;td&gt2nd colum&lt;&#47;td&gt;
+					&lt;&#47;tr&gt;
+				&lt;&#47;table&gt;
+			
+			</pre>
+			<h1 class="displays">Displays</h1>
+		<table>
+			<tr>
+				<td>Table item</td>
+			</tr>
+				<tr>
+					<td>Row with 2 colums</td>
+					<td>2nd Colum</td>
+				</tr>
+		</table>
+		<hr>
+		<h2>Alrgiht we've learned alot of html so now, go into your editor and have at it</h2>
+			<pre>
+				&lt;DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;title&gt;Site Name&lt;&#47;title&gt;
+  &lt;&#47;head&gt;
+  &lt;body&gt;
+		&lt;p&gt;This is where your code belongs, in betweeen your body tags&lt;&#47;p&gt;
+  &lt;&#47;body&gt;
+  &lt;&#47;html&gt;
+				
+			</pre>
+			<h3>Its important to Indent!!</h3>
+			<p>When you indent correctly you can save yourself, and others much time finding certain blocks of your code.</p>
+			<pre>
+	&lt;Parent&gt;
+		&lt;Child&gt;
+			&lt;Sub-child&gt;&lt;&#47;Sub-child&gt;
+		&lt;&#47;Child&gt;
+	&lt;&#47;Parent&gt;
+	</pre>
+	<br>
+	<aside>Good rule of thumb, is 1 tab per Parent-child-subChild</aside>
+	<hr>
+	<h1>Learning to Link</h1>
+		<p>Links consist of two components a and href=, once tells the landguage that its an anchor and it staing put , and href tell the langauge that its pointing to a different location.</p>
+		<pre>
+			&lt;a href="http://google.com/"&gt;Link text&lt;&#47;a&gt;
+			<s>&lt; href="http://google.com/"&gt;Link text&lt;&#47;a&gt;</s>
+		</pre>
+	<div class="css">
+	<h1 class="css intro dark-back"><span class="dark-back">Css Introduction</span></h1>
+		<p class="css intro">Css is the thing that makes your boring old HTML look nice and fancy going as far as changing the whole looks of as small section. This is the first part of this page, but styled</p>
+		<h1 class="css">Learning the art of Html</h1>
+			<p class="css">Im just kiding btw , html is pretty simple, infact all you really need to make a site are 6 tags(head,body,title,h1-h6,p)</p>
+		<h2 class="css">How this will work</h2>
+			<p class="css">As you go through this quick guide you will notice that the pages quaility improves, this is suppose to show what you can do with the things you have learned up to that point. I will be hooping around so if you have questions on things that I have displayed on this page some great sites to learn Html/css are</p>
+	</div>
+</body>
+</html>
